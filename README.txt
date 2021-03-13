@@ -1,5 +1,5 @@
 to start the scraping:
-1- enter the e-mail, password and the pages links in secrets.py
+1- enter the e-mail, password and the pages urls in secrets.py
 2- run the startscraping.py file
 
 The code was executed on linux. To execute it on windows,
@@ -13,9 +13,9 @@ the code performs the following things:
     1- get the number of likes
     2- get the number of shares
     3- get the posting date and change it from a string to datetime object
-    4- get the post text but it doesn't work perfectly because there is problem when the post has 2 more links.
+    4- get the post text but it doesn't work perfectly because there is problem when the post has 2 "show more" links.
 
-the pages links should be in this form: "https://m.facebook.com/PAGE_NAME/"
+the pages urls should be in this form: "https://m.facebook.com/PAGE_NAME/"
 
 For the facebook account:
     1- Disable translation for the most used languages used in posts (Arabic, French, English)
