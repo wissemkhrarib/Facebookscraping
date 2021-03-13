@@ -1,6 +1,6 @@
 import re
 
-from customerparser import CustomParser
+from customparser import CustomParser
 from getsoup import get_soup
 import datetime
 
@@ -44,6 +44,7 @@ class Post:
         if p_elts != None:
             for elt in p_elts:
                 post_text += "\n" + elt.text
+        post_text = post_text.replace('…', '').replace('More', '')
         return post_text
 
     def get_images_urls(self):
