@@ -1,6 +1,3 @@
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.keys import Keys
-
 from getsoup import get_soup
 from post import Post
 from time import sleep

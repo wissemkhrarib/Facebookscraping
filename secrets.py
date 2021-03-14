@@ -1,3 +1,3 @@
-username = "pfescap@gmail.com"
-password = "scraping1234**"
+username = "Your email"
+password = "Your password"
 pages = ["https://m.facebook.com/universityofsfax/", "https://m.facebook.com/TUNISAIR.OFFICIELLE/"]
