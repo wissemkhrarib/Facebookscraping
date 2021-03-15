@@ -1,3 +1,4 @@
 venv/
 test/
 /secrets.py
+ __pycache__/
