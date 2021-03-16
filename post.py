@@ -7,16 +7,22 @@ import datetime
 
 class Post:
     def __init__(self, post_html):
-        self.text = ""
+        self.post_id = ""
+        self.post_source = ""
+        self.post_url = ""
         self.nbr_likes = 0
         self.nbr_shares = 0
+        self.nbr_comments = 0
+        self.text = ""
         self.post_date = None
         self.images_urls = []
         self.other_urls = []
         self.scraping_date = datetime.datetime.now()
         self.soup = get_soup(str(post_html))
         self.parser = CustomParser()
-
+        #nbr_comments update_date post_url source_name type: page/group/personne main text - second text
+    def get_post_id(self):
+        href = "/story.php?story_fbid"
     def get_date(self):
         post_date = self.soup.find('abbr').text
         return self.parser.parse_date(post_date)
