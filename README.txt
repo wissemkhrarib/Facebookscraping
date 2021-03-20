@@ -13,7 +13,7 @@ the code performs the following things:
     1- get the number of likes
     2- get the number of shares
     3- get the number of comments
-    4- detect is post is shared or not
+    4- detect the post was shared or not
     5- get the video url if there is a video
     6- get the images urls if there are images (only the first 4 images)
     7- get the name of the page
