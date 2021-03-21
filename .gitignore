@@ -1,4 +1,6 @@
 venv/
 test/
 /secrets.py
+/todo.txt
+/bugs.txt
  __pycache__/

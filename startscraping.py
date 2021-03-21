@@ -1,7 +1,6 @@
 from facebookscraper import FacebookScraper
-from secrets import username, password, pages
-
-sc = FacebookScraper(username, password, pages)
+from secrets import username, password, cookies, pages, db_name, col_name
+sc = FacebookScraper(username, password, pages, db_name, col_name, cookies)
 sc.start_scraping()
 
 

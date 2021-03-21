@@ -19,4 +19,9 @@ class CustomParser:
 
     # get int from string
     def int_parser(self, string):
+        if 'K' in string:
+            try:
+                return int(float(re.search(r'\d+.\d+', string).group()) * 1000)
+            except:
+                return int(float(re.search(r'\d+', string).group().replace(',', '.')) * 1000)
         return int(re.search(r'\d+', string).group())
